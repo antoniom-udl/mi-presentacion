@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre mí | Portafolio de Antonio Montalvo</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container header-content">
+      <div class="logo">AM</div>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Inicio</a>
+        <a href="sobre-mi.html" class="active">Sobre mí</a>
+        <a href="portafolio.html">Portafolio</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container about-grid">
+        
+        <!-- LADO IZQUIERDO: TEXTO -->
+        <div class="reveal">
+          <h1>Sobre mí</h1>
+          <h2 class="section-subtitle">Mini biografía</h2>
+
+          <p>
+            Mi nombre es Juan Antonio Montalvo Ramírez. Nací el 13 de julio de 2005 en León, Guanajuato.
+            Desde muy joven, mi curiosidad me llevó a buscar el porqué de las cosas, una inclinación que
+            me dirigió de forma natural hacia el potencial de la tecnología y la lógica de los sistemas.
+          </p>
+
+          <p>
+            Mi meta primordial ahora es mi formación en Ingeniería en Computación en la Universidad de León,
+            donde busco dominar la técnica y las bases del desarrollo. Aunque el ambiente artístico de la música
+            y la pintura me ha influenciado profundamente, convirtiendo la producción musical en un laboratorio
+            valioso para la creatividad.
+          </p>
+
+          <p>
+            Mi visión es lograr un equilibrio funcional entre la lógica de la programación y la expresión artística.
+            No busco solo codificar; mi misión es que cada proyecto que desarrolle lleve una esencia propia,
+            fusionando la técnica con una creatividad que me permita salir de lo ordinario y generar soluciones
+            innovadoras a través de rutas alternativas.
+          </p>
+
+          <h2 class="section-subtitle">Intereses y valores</h2>
+          <ul class="pill-list">
+            <li>Trabajo en equipo</li>
+            <li>Aprendizaje constante</li>
+            <li>Responsabilidad</li>
+            <li>Creatividad</li>
+          </ul>
+
+          <h2 class="section-subtitle">Tecnologías y áreas que domino</h2>
+          <div class="skills-grid">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">C++</div>
+            <div class="skill-card">GitHub</div>
+            <div class="skill-card">Java</div>
+          </div>
+        </div>
+
+        <!-- LADO DERECHO: CARRUSEL DE FOTOS -->
+        <div class="about-photo reveal delay-1">
+          <!-- Carrusel automático -->
+          <div class="about-carousel" data-carousel>
+            <img src="img/sobre_mi_img1.jpeg" class="active" alt="Foto 1 de Antonio">
+            <img src="img/sobre_mi_img2.jpeg" alt="Foto 2 de Antonio">
+            <img src="img/sobre_mi_img3.jpeg" alt="Foto 3 de Antonio">
+            <img src="img/sobre_mi_img4.jpeg" alt="Foto 4 de Antonio">
+          </div>
+
+          <!-- Indicadores de puntos -->
+          <div class="carousel-dots" data-carousel-dots></div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Antonio Montalvo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

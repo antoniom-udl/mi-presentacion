@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Antonio Montalvo</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container header-content">
+      <div class="logo">AM</div>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Inicio</a>
+        <a href="sobre-mi.html">Sobre mí</a>
+        <a href="portafolio.html">Portafolio</a>
+        <a href="contacto.html" class="active">Contacto</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <h1>Contacto</h1>
+          <p class="section-intro">
+            Si te interesa colaborar conmigo o tienes alguna pregunta, completa
+            el siguiente formulario.
+          </p>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+              <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="correo">Correo</label>
+              <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+              <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+              <small class="error-message"></small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar (simulado)</button>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside class="contact-info reveal delay-1">
+          <h2>Otros medios</h2>
+          <ul>
+            <li><strong>Correo:</strong> antoniomontrz13@gmail.com</li>
+
+            <li><strong>GitHub:</strong> 
+              <a href="https://github.com/antoniom-udl" target="_blank">
+                github.com/antoniom-udl
+              </a>
+            </li>
+
+            <li><strong>LinkedIn:</strong> 
+              <a href="https://www.linkedin.com/in/juan-antonio-montalvo-ramirez-466354367" target="_blank">
+                linkedin.com/in/juan-antonio-montalvo-ramirez-466354367
+              </a>
+            </li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Antonio Montalvo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

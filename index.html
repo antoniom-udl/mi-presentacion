@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio | Portafolio de Antonio Montalvo</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 🔔 Etiqueta flotante de bienvenida -->
+  <div id="welcome-msg">
+    ¡Bienvenido a mi página! Aquí podrás conocerme mejor.
+  </div>
+
+  <!-- Navegación -->
+  <header class="main-header">
+    <div class="container header-content">
+
+      <!-- LOGO DENTRO DEL CÍRCULO -->
+      <div class="logo logo-circle">
+        <img src="img/logo.png" alt="Logo de Antonio">
+      </div>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="sobre-mi.html">Sobre mí</a>
+        <a href="portafolio.html">Portafolio</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero / Presentación -->
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="container hero-grid">
+
+        <div class="hero-text reveal">
+          <p class="hero-kicker">Hola, soy</p>
+          <h1>Antonio Montalvo</h1>
+          <h2>Soy estudiante de la Universidad de León.</h2>
+
+          <p class="hero-desc">
+            Busco crear proyectos tecnológicos que innoven, fusionando mi base técnica con una creatividad única.
+            Mi meta es salir de lo ordinario, aplicando rutas alternativas a cada desarrollo.
+          </p>
+
+          <div class="hero-actions">
+            <a href="portafolio.html" class="btn btn-primary">Ver mis proyectos</a>
+
+            <!-- Botón WhatsApp -->
+            <a 
+              href="https://wa.me/524791807142?text=Hola%20Antonio,%20vi%20tu%20portafolio%20y%20quiero%20contactarte."
+              class="btn btn-outline"
+              target="_blank"
+            >
+              Hablemos
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-avatar reveal delay-1">
+          <div class="avatar-circle">
+            <img src="img/inicio_yo.jpeg" alt="Foto de Antonio Montalvo">
+          </div>
+
+          <ul class="hero-info">
+            <li><strong>Nombre:</strong> Antonio Montalvo</li>
+            <li><strong>Carrera / Rol:</strong> Estudiante de Ingeniería en Computación.</li>
+            <li><strong>Ubicación:</strong> León, Guanajuato.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Mensaje / Pitch personal -->
+    <section class="section alt-bg">
+      <div class="container reveal">
+        <h3>Bienvenido a mi sitio web profesional.</h3>
+        <p>
+          Aquí encontrarás información sobre mi trayectoria, habilidades, proyectos y formas de contacto.
+          Mi objetivo es seguir creciendo en el desarrollo de software y aportar soluciones creativas y
+          efectivas a los retos tecnológicos.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Antonio Montalvo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Antonio Montalvo</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container header-content">
+      <div class="logo">AM</div>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Inicio</a>
+        <a href="sobre-mi.html">Sobre mí</a>
+        <a href="portafolio.html" class="active">Portafolio</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Portafolio</h1>
+        <p class="section-intro">
+          Algunos de mis proyectos desarrollados durante mi formación y el link a twitch donde comparto mis hobbies con más gente.
+        </p>
+
+        <div class="portfolio-grid">
+
+          <!-- Proyecto 1: Página web de cafetería -->
+          <article class="card reveal">
+            <div class="card-thumb">
+              <img src="img/vista_previa_cafeteria.png" alt="Vista previa página web de cafetería">
+              <div class="card-thumb-overlay">
+                <p>Landing page moderna creada para una cafetería incluyendo menu y demás.</p>
+                <a href="https://antoniom-udl.github.io/segundoproyectolandingpage/" target="_blank">Abrir proyecto</a>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="card-tag">Proyecto Web</div>
+              <h2>Entre Parentesis</h2>
+            </div>
+          </article>
+
+          <!-- Proyecto 2: Congreso de Ingenierías -->
+          <article class="card reveal delay-1">
+            <div class="card-thumb">
+              <img src="img/vista_previa_congreso.png" alt="Vista previa página congreso de ingenierías">
+              <div class="card-thumb-overlay">
+                <p>Landing page informativa creada con bootstrap para el congreso de ingenierias.</p>
+                <a href="https://antoniom-udl.github.io/bootstrap_landing_page/" target="_blank">Abrir proyecto</a>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="card-tag">Proyecto Web</div>
+              <h2>Congreso de ingenierías</h2>
+            </div>
+          </article>
+
+          <!-- Proyecto 3: Fases de proyecto CONALEP -->
+          <article class="card reveal delay-2">
+            <div class="card-thumb">
+              <img src="img/vista_previa_proyecto_fases.png" alt="Vista previa página fases de un proyecto">
+              <div class="card-thumb-overlay">
+                <p>Prototipo de página educativa que explica las fases principales de un proyecto.</p>
+                <a href="https://antoniom-udl.github.io/web_fases_plan/" target="_blank">Abrir proyecto</a>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="card-tag">Proyecto Escolar</div>
+              <h2>Prototipo</h2>
+            </div>
+          </article>
+
+          <!-- Proyecto 4: Hobbies -->
+          <article class="card reveal">
+            <div class="card-thumb">
+              <img src="img/vista_previa_twitch.png" alt="Vista previa hobbies y canal de Twitch de Antonio">
+              <div class="card-thumb-overlay">
+                <p>Producción musical, streaming y creación de contenido.</p>
+                <a href="https://www.twitch.tv/anmav_prod" target="_blank">Ir a mi Twitch</a>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="card-tag">Hobbies</div>
+              <h2>Twitch</h2>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Antonio Montalvo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
